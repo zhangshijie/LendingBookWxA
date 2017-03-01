@@ -26,6 +26,8 @@ class UsersController < ApplicationController
 		if !@user
 			return render json: {error: 4000, msg: '找不到该用户'}, status: 400
 		end
+
+		render json: {error: 4000, msg: '找不到该用户'}, status: 400
 	end
 
 
