@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UserssController < ApplicationController
 
 	def create
 	  param! :name, String, required: true
