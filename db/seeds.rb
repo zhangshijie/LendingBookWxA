@@ -9,5 +9,6 @@
 
 
 2.times do |i|
-   User.create(name:"UserName ##{i}}",avatar:"http://www.baidu.com")
+   # User.create(name:"UserName ##{i}}",avatar:"http://www.baidu.com")
+   user = User.create(name: "David", occupation: "Code Artist")
 end
