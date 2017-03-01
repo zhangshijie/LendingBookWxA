@@ -233,3 +233,15 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 20ms (Views: 9.8ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mActiveRecord::SchemaMigration Load (25.0ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (6.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (6.5ms)[0m  [1m[32mINSERT INTO `users` (`name`, `avatar`, `created_at`, `updated_at`) VALUES ('UserName #0}', 'http://www.baidu.com', '2017-03-01 10:34:05', '2017-03-01 10:34:05')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `avatar`, `created_at`, `updated_at`) VALUES ('UserName #1}', 'http://www.baidu.com', '2017-03-01 10:34:05', '2017-03-01 10:34:05')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
