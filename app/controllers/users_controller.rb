@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
 
 	def create
-	  param! :name, String, required: true
-	  param! :url, String, required: true
+	  # param! :name, String, required: true
+	  # param! :url, String, required: true
 
 	  name = params[:name]
 	  avatar = params[:url]
