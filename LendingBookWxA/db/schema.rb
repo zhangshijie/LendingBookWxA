@@ -12,16 +12,16 @@
 
 ActiveRecord::Schema.define(version: 20170227083241) do
 
-  create_table "books", force: :cascade do |t|
+  create_table "books", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title"
-    t.text     "dsc"
+    t.text     "dsc",        limit: 65535
     t.string   "url"
     t.string   "img"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
-  create_table "orders", force: :cascade do |t|
+  create_table "orders", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "use_id"
@@ -29,12 +29,12 @@ ActiveRecord::Schema.define(version: 20170227083241) do
     t.boolean  "Finished"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
     t.string   "avatar"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.         "OpenID"
+    t.string   "openid"
     t.string   "token"
   end
 
