@@ -4,8 +4,8 @@ default: &default
   pool: 5
   username: root
   password:
-  # socket: /tmp/mysql.sock 
-   socket: /var/run/mysqld/mysqld.sock
+  socket: /tmp/mysql.sock 
+   # socket: /var/run/mysqld/mysqld.sock
 development:
   <<: *default
   database: lending_book_development
@@ -19,5 +19,5 @@ production:
   database: lending_book_production
   username: root
   password: 
-  # socket: /var/run/mysqld/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock
 
