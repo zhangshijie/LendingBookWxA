@@ -1,4 +1,4 @@
-class BookController < ApplicationController
+class BooksController < ApplicationController
     
 	def create
 	  param! :title, String, required: true
