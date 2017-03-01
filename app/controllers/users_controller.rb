@@ -13,7 +13,7 @@ class UsersController < ApplicationController
    #      return render json: {error: 4000, msg: '创建用户失败'}, status: 400
 	  # end
 
-       @user = User.new(name: '', avatar: '')
+       @user = User.new(name: 'aa', avatar: 'bb')
 	end
 
 	def show
