@@ -10,5 +10,5 @@
 
 2.times do |i|
    # User.create(name:"UserName ##{i}}",avatar:"http://www.baidu.com")
-   user = User.create(name: "User ##{i}", url: "http://www.baidu.com")
+   user = User.create(name: "User ##{i}", avatar: "http://www.baidu.com")
 end
