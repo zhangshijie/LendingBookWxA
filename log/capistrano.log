@@ -1168,3 +1168,238 @@ checked out. Run `bundle install` first.
  DEBUG [d2adea73] 	* Daemonizing...
  DEBUG [d2adea73] 	
   INFO [d2adea73] Finished in 0.643 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-03-01 14:17:30 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7e1ed644] Running [ -d ~/.rvm ] as cj@112.74.186.85
+ DEBUG [7e1ed644] Command: [ -d ~/.rvm ]
+ DEBUG [7e1ed644] Finished in 0.264 seconds with exit status 0 (successful).
+ DEBUG [b42c9c1f] Running ~/.rvm/bin/rvm version as cj@112.74.186.85
+ DEBUG [b42c9c1f] Command: ~/.rvm/bin/rvm version
+ DEBUG [b42c9c1f] 	rvm 1.29.1 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io/]
+ DEBUG [b42c9c1f] Finished in 0.403 seconds with exit status 0 (successful).
+ DEBUG [8c4749a1] Running ~/.rvm/bin/rvm current as cj@112.74.186.85
+ DEBUG [8c4749a1] Command: ~/.rvm/bin/rvm current
+ DEBUG [8c4749a1] 	ruby-2.3.3
+ DEBUG [8c4749a1] Finished in 0.526 seconds with exit status 0 (successful).
+ DEBUG [089a784c] Running ~/.rvm/bin/rvm default do ruby --version as cj@112.74.186.85
+ DEBUG [089a784c] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [089a784c] 	ruby 2.3.3p222 (2016-11-21 revision 56859) [x86_64-linux]
+ DEBUG [089a784c] Finished in 0.273 seconds with exit status 0 (successful).
+  INFO [488961b7] Running /usr/bin/env mkdir -p /tmp as cj@112.74.186.85
+ DEBUG [488961b7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [488961b7] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-lending_book_wxa-production-cheungcj.sh 0.0%
+  INFO Uploading /tmp/git-ssh-lending_book_wxa-production-cheungcj.sh 100.0%
+  INFO [fd557ca4] Running /usr/bin/env chmod 700 /tmp/git-ssh-lending_book_wxa-production-cheungcj.sh as cj@112.74.186.85
+ DEBUG [fd557ca4] Command: /usr/bin/env chmod 700 /tmp/git-ssh-lending_book_wxa-production-cheungcj.sh
+  INFO [fd557ca4] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [38c8967d] Running /usr/bin/env git ls-remote git@git.coding.net:cjzhang/lending_book_wxa.git HEAD as cj@112.74.186.85
+ DEBUG [38c8967d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lending_book_wxa-production-cheungcj.sh" ; /usr/bin/env git ls-remote git@git.coding.net:cjzhang/lending_book_wxa.git HEAD )
+ DEBUG [38c8967d] 	148aaa0c7c5fe0bae34830077f722f33203ca628	HEAD
+  INFO [38c8967d] Finished in 0.582 seconds with exit status 0 (successful).
+  INFO [594605eb] Running /usr/bin/env mkdir -p /home/cj/lending_book_wxa/shared /home/cj/lending_book_wxa/releases as cj@112.74.186.85
+ DEBUG [594605eb] Command: /usr/bin/env mkdir -p /home/cj/lending_book_wxa/shared /home/cj/lending_book_wxa/releases
+  INFO [594605eb] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [ec912f90] Running /usr/bin/env mkdir -p /home/cj/lending_book_wxa/shared/log /home/cj/lending_book_wxa/shared/tmp/pids /home/cj/lending_book_wxa/shared/tmp/cache /home/cj/lending_book_wxa/shared/tmp/sockets /home/cj/lending_book_wxa/shared/public/system /home/cj/lending_book_wxa/shared/public/assets as cj@112.74.186.85
+ DEBUG [ec912f90] Command: /usr/bin/env mkdir -p /home/cj/lending_book_wxa/shared/log /home/cj/lending_book_wxa/shared/tmp/pids /home/cj/lending_book_wxa/shared/tmp/cache /home/cj/lending_book_wxa/shared/tmp/sockets /home/cj/lending_book_wxa/shared/public/system /home/cj/lending_book_wxa/shared/public/assets
+  INFO [ec912f90] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [0dfc9417] Running [ -f /home/cj/lending_book_wxa/shared/puma.rb ] as cj@112.74.186.85
+ DEBUG [0dfc9417] Command: [ -f /home/cj/lending_book_wxa/shared/puma.rb ]
+ DEBUG [0dfc9417] Finished in 0.019 seconds with exit status 0 (successful).
+ DEBUG [426efcab] Running [ -f /home/cj/lending_book_wxa/current/REVISION ] as cj@112.74.186.85
+ DEBUG [426efcab] Command: [ -f /home/cj/lending_book_wxa/current/REVISION ]
+ DEBUG [426efcab] Finished in 0.020 seconds with exit status 0 (successful).
+ DEBUG [b41def63] Running /usr/bin/env cat /home/cj/lending_book_wxa/current/REVISION 2>/dev/null as cj@112.74.186.85
+ DEBUG [b41def63] Command: /usr/bin/env cat /home/cj/lending_book_wxa/current/REVISION 2>/dev/null
+ DEBUG [b41def63] 	d669e9840a74d761638c1eae4168356eed30e40c
+ DEBUG [b41def63] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [d5e18ad6] Running [ -f /home/cj/lending_book_wxa/repo/HEAD ] as cj@112.74.186.85
+ DEBUG [d5e18ad6] Command: [ -f /home/cj/lending_book_wxa/repo/HEAD ]
+ DEBUG [d5e18ad6] Finished in 0.019 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/cj/lending_book_wxa/repo
+ DEBUG [a1fc35c0] Running if test ! -d /home/cj/lending_book_wxa/repo; then echo "Directory does not exist '/home/cj/lending_book_wxa/repo'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [a1fc35c0] Command: if test ! -d /home/cj/lending_book_wxa/repo; then echo "Directory does not exist '/home/cj/lending_book_wxa/repo'" 1>&2; false; fi
+ DEBUG [a1fc35c0] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [0b5ea4b2] Running /usr/bin/env git remote set-url origin git@git.coding.net:cjzhang/lending_book_wxa.git as cj@112.74.186.85
+ DEBUG [0b5ea4b2] Command: cd /home/cj/lending_book_wxa/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lending_book_wxa-production-cheungcj.sh" ; /usr/bin/env git remote set-url origin git@git.coding.net:cjzhang/lending_book_wxa.git )
+  INFO [0b5ea4b2] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [89cebea2] Running /usr/bin/env git remote update --prune as cj@112.74.186.85
+ DEBUG [89cebea2] Command: cd /home/cj/lending_book_wxa/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lending_book_wxa-production-cheungcj.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [89cebea2] 	Fetching origin
+ DEBUG [89cebea2] 	From git.coding.net:cjzhang/lending_book_wxa
+   d669e98..148aaa0  master     -> master
+  INFO [89cebea2] Finished in 0.784 seconds with exit status 0 (successful).
+ DEBUG [bceee4ae] Running if test ! -d /home/cj/lending_book_wxa/repo; then echo "Directory does not exist '/home/cj/lending_book_wxa/repo'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [bceee4ae] Command: if test ! -d /home/cj/lending_book_wxa/repo; then echo "Directory does not exist '/home/cj/lending_book_wxa/repo'" 1>&2; false; fi
+ DEBUG [bceee4ae] Finished in 0.029 seconds with exit status 0 (successful).
+  INFO [47602288] Running /usr/bin/env mkdir -p /home/cj/lending_book_wxa/releases/20170301061732 as cj@112.74.186.85
+ DEBUG [47602288] Command: cd /home/cj/lending_book_wxa/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lending_book_wxa-production-cheungcj.sh" ; /usr/bin/env mkdir -p /home/cj/lending_book_wxa/releases/20170301061732 )
+  INFO [47602288] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [66e450c7] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/cj/lending_book_wxa/releases/20170301061732 as cj@112.74.186.85
+ DEBUG [66e450c7] Command: cd /home/cj/lending_book_wxa/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lending_book_wxa-production-cheungcj.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/cj/lending_book_wxa/releases/20170301061732 )
+  INFO [66e450c7] Finished in 0.031 seconds with exit status 0 (successful).
+ DEBUG [005cbb5b] Running if test ! -d /home/cj/lending_book_wxa/repo; then echo "Directory does not exist '/home/cj/lending_book_wxa/repo'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [005cbb5b] Command: if test ! -d /home/cj/lending_book_wxa/repo; then echo "Directory does not exist '/home/cj/lending_book_wxa/repo'" 1>&2; false; fi
+ DEBUG [005cbb5b] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [fc15d217] Running /usr/bin/env git rev-list --max-count=1 master as cj@112.74.186.85
+ DEBUG [fc15d217] Command: cd /home/cj/lending_book_wxa/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-lending_book_wxa-production-cheungcj.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [fc15d217] 	148aaa0c7c5fe0bae34830077f722f33203ca628
+ DEBUG [fc15d217] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [4350cf1b] Running if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [4350cf1b] Command: if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi
+ DEBUG [4350cf1b] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [236a3078] Running /usr/bin/env echo "148aaa0c7c5fe0bae34830077f722f33203ca628" >> REVISION as cj@112.74.186.85
+ DEBUG [236a3078] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && /usr/bin/env echo "148aaa0c7c5fe0bae34830077f722f33203ca628" >> REVISION
+  INFO [236a3078] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [e7bb5d6d] Running /usr/bin/env mkdir -p /home/cj/lending_book_wxa/releases/20170301061732 /home/cj/lending_book_wxa/releases/20170301061732/tmp /home/cj/lending_book_wxa/releases/20170301061732/public as cj@112.74.186.85
+ DEBUG [e7bb5d6d] Command: /usr/bin/env mkdir -p /home/cj/lending_book_wxa/releases/20170301061732 /home/cj/lending_book_wxa/releases/20170301061732/tmp /home/cj/lending_book_wxa/releases/20170301061732/public
+  INFO [e7bb5d6d] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [0575b06a] Running [ -L /home/cj/lending_book_wxa/releases/20170301061732/log ] as cj@112.74.186.85
+ DEBUG [0575b06a] Command: [ -L /home/cj/lending_book_wxa/releases/20170301061732/log ]
+ DEBUG [0575b06a] Finished in 0.020 seconds with exit status 1 (failed).
+ DEBUG [c631ec59] Running [ -d /home/cj/lending_book_wxa/releases/20170301061732/log ] as cj@112.74.186.85
+ DEBUG [c631ec59] Command: [ -d /home/cj/lending_book_wxa/releases/20170301061732/log ]
+ DEBUG [c631ec59] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [e19dbc36] Running /usr/bin/env rm -rf /home/cj/lending_book_wxa/releases/20170301061732/log as cj@112.74.186.85
+ DEBUG [e19dbc36] Command: /usr/bin/env rm -rf /home/cj/lending_book_wxa/releases/20170301061732/log
+  INFO [e19dbc36] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [bee9ece0] Running /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/log /home/cj/lending_book_wxa/releases/20170301061732/log as cj@112.74.186.85
+ DEBUG [bee9ece0] Command: /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/log /home/cj/lending_book_wxa/releases/20170301061732/log
+  INFO [bee9ece0] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [68dae8fd] Running [ -L /home/cj/lending_book_wxa/releases/20170301061732/tmp/pids ] as cj@112.74.186.85
+ DEBUG [68dae8fd] Command: [ -L /home/cj/lending_book_wxa/releases/20170301061732/tmp/pids ]
+ DEBUG [68dae8fd] Finished in 0.020 seconds with exit status 1 (failed).
+ DEBUG [ee84b6b9] Running [ -d /home/cj/lending_book_wxa/releases/20170301061732/tmp/pids ] as cj@112.74.186.85
+ DEBUG [ee84b6b9] Command: [ -d /home/cj/lending_book_wxa/releases/20170301061732/tmp/pids ]
+ DEBUG [ee84b6b9] Finished in 0.021 seconds with exit status 1 (failed).
+  INFO [dec2264e] Running /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/tmp/pids /home/cj/lending_book_wxa/releases/20170301061732/tmp/pids as cj@112.74.186.85
+ DEBUG [dec2264e] Command: /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/tmp/pids /home/cj/lending_book_wxa/releases/20170301061732/tmp/pids
+  INFO [dec2264e] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [12d343ca] Running [ -L /home/cj/lending_book_wxa/releases/20170301061732/tmp/cache ] as cj@112.74.186.85
+ DEBUG [12d343ca] Command: [ -L /home/cj/lending_book_wxa/releases/20170301061732/tmp/cache ]
+ DEBUG [12d343ca] Finished in 0.021 seconds with exit status 1 (failed).
+ DEBUG [5f4e657e] Running [ -d /home/cj/lending_book_wxa/releases/20170301061732/tmp/cache ] as cj@112.74.186.85
+ DEBUG [5f4e657e] Command: [ -d /home/cj/lending_book_wxa/releases/20170301061732/tmp/cache ]
+ DEBUG [5f4e657e] Finished in 0.021 seconds with exit status 1 (failed).
+  INFO [50b40b57] Running /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/tmp/cache /home/cj/lending_book_wxa/releases/20170301061732/tmp/cache as cj@112.74.186.85
+ DEBUG [50b40b57] Command: /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/tmp/cache /home/cj/lending_book_wxa/releases/20170301061732/tmp/cache
+  INFO [50b40b57] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [82d9e429] Running [ -L /home/cj/lending_book_wxa/releases/20170301061732/tmp/sockets ] as cj@112.74.186.85
+ DEBUG [82d9e429] Command: [ -L /home/cj/lending_book_wxa/releases/20170301061732/tmp/sockets ]
+ DEBUG [82d9e429] Finished in 0.020 seconds with exit status 1 (failed).
+ DEBUG [ab5eee35] Running [ -d /home/cj/lending_book_wxa/releases/20170301061732/tmp/sockets ] as cj@112.74.186.85
+ DEBUG [ab5eee35] Command: [ -d /home/cj/lending_book_wxa/releases/20170301061732/tmp/sockets ]
+ DEBUG [ab5eee35] Finished in 0.020 seconds with exit status 1 (failed).
+  INFO [2f40c656] Running /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/tmp/sockets /home/cj/lending_book_wxa/releases/20170301061732/tmp/sockets as cj@112.74.186.85
+ DEBUG [2f40c656] Command: /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/tmp/sockets /home/cj/lending_book_wxa/releases/20170301061732/tmp/sockets
+  INFO [2f40c656] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [940b1cdb] Running [ -L /home/cj/lending_book_wxa/releases/20170301061732/public/system ] as cj@112.74.186.85
+ DEBUG [940b1cdb] Command: [ -L /home/cj/lending_book_wxa/releases/20170301061732/public/system ]
+ DEBUG [940b1cdb] Finished in 0.020 seconds with exit status 1 (failed).
+ DEBUG [dfe634c1] Running [ -d /home/cj/lending_book_wxa/releases/20170301061732/public/system ] as cj@112.74.186.85
+ DEBUG [dfe634c1] Command: [ -d /home/cj/lending_book_wxa/releases/20170301061732/public/system ]
+ DEBUG [dfe634c1] Finished in 0.021 seconds with exit status 1 (failed).
+  INFO [7d88acc6] Running /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/public/system /home/cj/lending_book_wxa/releases/20170301061732/public/system as cj@112.74.186.85
+ DEBUG [7d88acc6] Command: /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/public/system /home/cj/lending_book_wxa/releases/20170301061732/public/system
+  INFO [7d88acc6] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [c7cd227e] Running [ -L /home/cj/lending_book_wxa/releases/20170301061732/public/assets ] as cj@112.74.186.85
+ DEBUG [c7cd227e] Command: [ -L /home/cj/lending_book_wxa/releases/20170301061732/public/assets ]
+ DEBUG [c7cd227e] Finished in 0.021 seconds with exit status 1 (failed).
+ DEBUG [37277b46] Running [ -d /home/cj/lending_book_wxa/releases/20170301061732/public/assets ] as cj@112.74.186.85
+ DEBUG [37277b46] Command: [ -d /home/cj/lending_book_wxa/releases/20170301061732/public/assets ]
+ DEBUG [37277b46] Finished in 0.021 seconds with exit status 1 (failed).
+  INFO [5360aee2] Running /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/public/assets /home/cj/lending_book_wxa/releases/20170301061732/public/assets as cj@112.74.186.85
+ DEBUG [5360aee2] Command: /usr/bin/env ln -s /home/cj/lending_book_wxa/shared/public/assets /home/cj/lending_book_wxa/releases/20170301061732/public/assets
+  INFO [5360aee2] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [8ed8b124] Running if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [8ed8b124] Command: if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi
+ DEBUG [8ed8b124] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [7bada431] Running ~/.rvm/bin/rvm default do bundle check --path /home/cj/lending_book_wxa/shared/bundle as cj@112.74.186.85
+ DEBUG [7bada431] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && ~/.rvm/bin/rvm default do bundle check --path /home/cj/lending_book_wxa/shared/bundle
+ DEBUG [7bada431] 	The following gems are missing
+ DEBUG [7bada431] 	 * net-ssh (4.0.1)
+ DEBUG [7bada431] 	 * net-scp (1.2.1)
+ DEBUG [7bada431] 	 * sshkit (1.11.5)
+ DEBUG [7bada431] 	 * airbrussh (1.1.2)
+ DEBUG [7bada431] 	 * byebug (9.0.6)
+ DEBUG [7bada431] 	 * capistrano-harrow (0.5.3)
+ DEBUG [7bada431] 	 * capistrano (3.7.2)
+ DEBUG [7bada431] 	 * capistrano-bundler (1.2.0)
+ DEBUG [7bada431] 	 * capistrano-rails (1.2.2)
+ DEBUG [7bada431] 	 * sshkit-interactive (0.2.0)
+ DEBUG [7bada431] 	 * capistrano-rails-console (2.2.0)
+ DEBUG [7bada431] 	 * capistrano-rvm (0.1.2)
+ DEBUG [7bada431] 	 * capistrano3-puma (1.2.1)
+ DEBUG [7bada431] 	 * debug_inspector (0.0.2)
+ DEBUG [7bada431] 	 * ffi (1.9.17)
+ DEBUG [7bada431] 	 * rb-fsevent (0.9.8)
+ DEBUG [7bada431] 	 * rb-inotify (0.9.8)
+ DEBUG [7bada431] 	 * listen (3.0.8)
+ DEBUG [7bada431] 	 * spring (2.0.1)
+ DEBUG [7bada431] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [7bada431] 	 * web-console (3.4.0)
+ DEBUG [7bada431] 	Install missing gems with `bundle install`
+ DEBUG [7bada431] Finished in 0.562 seconds with exit status 1 (failed).
+  INFO [6b815fbd] Running ~/.rvm/bin/rvm default do bundle install --path /home/cj/lending_book_wxa/shared/bundle --without development test --deployment --quiet as cj@112.74.186.85
+ DEBUG [6b815fbd] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && ~/.rvm/bin/rvm default do bundle install --path /home/cj/lending_book_wxa/shared/bundle --without development test --deployment --quiet
+  INFO [6b815fbd] Finished in 6.030 seconds with exit status 0 (successful).
+ DEBUG [7b711c0a] Running if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [7b711c0a] Command: if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi
+ DEBUG [7b711c0a] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [7089c963] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as cj@112.74.186.85
+ DEBUG [7089c963] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+  INFO [7089c963] Finished in 2.016 seconds with exit status 0 (successful).
+ DEBUG [4e9b9526] Running if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [4e9b9526] Command: if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi
+ DEBUG [4e9b9526] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [442c4523] Running /usr/bin/env mkdir -p /home/cj/lending_book_wxa/releases/20170301061732/assets_manifest_backup as cj@112.74.186.85
+ DEBUG [442c4523] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && /usr/bin/env mkdir -p /home/cj/lending_book_wxa/releases/20170301061732/assets_manifest_backup
+  INFO [442c4523] Finished in 0.021 seconds with exit status 0 (successful).
+ DEBUG [333cd252] Running /usr/bin/env ls /home/cj/lending_book_wxa/releases/20170301061732/public/assets/.sprockets-manifest* as cj@112.74.186.85
+ DEBUG [333cd252] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && /usr/bin/env ls /home/cj/lending_book_wxa/releases/20170301061732/public/assets/.sprockets-manifest*
+ DEBUG [333cd252] 	/home/cj/lending_book_wxa/releases/20170301061732/public/assets/.sprockets-manifest-afff792e3ca3fb35efd43ed45cf490c0.json
+ DEBUG [333cd252] Finished in 0.024 seconds with exit status 0 (successful).
+ DEBUG [b59fe436] Running /usr/bin/env ls /home/cj/lending_book_wxa/releases/20170301061732/public/assets/.sprockets-manifest* as cj@112.74.186.85
+ DEBUG [b59fe436] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && /usr/bin/env ls /home/cj/lending_book_wxa/releases/20170301061732/public/assets/.sprockets-manifest*
+ DEBUG [b59fe436] 	/home/cj/lending_book_wxa/releases/20170301061732/public/assets/.sprockets-manifest-afff792e3ca3fb35efd43ed45cf490c0.json
+ DEBUG [b59fe436] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [00c0dd2a] Running /usr/bin/env cp /home/cj/lending_book_wxa/releases/20170301061732/public/assets/.sprockets-manifest-afff792e3ca3fb35efd43ed45cf490c0.json /home/cj/lending_book_wxa/releases/20170301061732/assets_manifest_backup as cj@112.74.186.85
+ DEBUG [00c0dd2a] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && /usr/bin/env cp /home/cj/lending_book_wxa/releases/20170301061732/public/assets/.sprockets-manifest-afff792e3ca3fb35efd43ed45cf490c0.json /home/cj/lending_book_wxa/releases/20170301061732/assets_manifest_backup
+  INFO [00c0dd2a] Finished in 0.022 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [f941bf50] Running if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [f941bf50] Command: if test ! -d /home/cj/lending_book_wxa/releases/20170301061732; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases/20170301061732'" 1>&2; false; fi
+ DEBUG [f941bf50] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [9deb1e67] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate as cj@112.74.186.85
+ DEBUG [9deb1e67] Command: cd /home/cj/lending_book_wxa/releases/20170301061732 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+  INFO [9deb1e67] Finished in 1.878 seconds with exit status 0 (successful).
+  INFO [68ce49ff] Running /usr/bin/env ln -s /home/cj/lending_book_wxa/releases/20170301061732 /home/cj/lending_book_wxa/releases/current as cj@112.74.186.85
+ DEBUG [68ce49ff] Command: /usr/bin/env ln -s /home/cj/lending_book_wxa/releases/20170301061732 /home/cj/lending_book_wxa/releases/current
+  INFO [68ce49ff] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [06a873e5] Running /usr/bin/env mv /home/cj/lending_book_wxa/releases/current /home/cj/lending_book_wxa as cj@112.74.186.85
+ DEBUG [06a873e5] Command: /usr/bin/env mv /home/cj/lending_book_wxa/releases/current /home/cj/lending_book_wxa
+  INFO [06a873e5] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [d60ba3e1] Running /usr/bin/env ls -x /home/cj/lending_book_wxa/releases as cj@112.74.186.85
+ DEBUG [d60ba3e1] Command: /usr/bin/env ls -x /home/cj/lending_book_wxa/releases
+ DEBUG [d60ba3e1] 	20170301053756	20170301061732
+ DEBUG [d60ba3e1] Finished in 0.022 seconds with exit status 0 (successful).
+ DEBUG [09e9a074] Running if test ! -d /home/cj/lending_book_wxa/releases; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [09e9a074] Command: if test ! -d /home/cj/lending_book_wxa/releases; then echo "Directory does not exist '/home/cj/lending_book_wxa/releases'" 1>&2; false; fi
+ DEBUG [09e9a074] Finished in 0.021 seconds with exit status 0 (successful).
+  INFO [fd16b8d7] Running /usr/bin/env echo "Branch master (at 148aaa0c7c5fe0bae34830077f722f33203ca628) deployed as release 20170301061732 by cheungcj" >> /home/cj/lending_book_wxa/revisions.log as cj@112.74.186.85
+ DEBUG [fd16b8d7] Command: cd /home/cj/lending_book_wxa/releases && /usr/bin/env echo "Branch master (at 148aaa0c7c5fe0bae34830077f722f33203ca628) deployed as release 20170301061732 by cheungcj" >> /home/cj/lending_book_wxa/revisions.log
+  INFO [fd16b8d7] Finished in 0.025 seconds with exit status 0 (successful).
+ DEBUG [2d1eb074] Running if test ! -d /home/cj/lending_book_wxa/current; then echo "Directory does not exist '/home/cj/lending_book_wxa/current'" 1>&2; false; fi as cj@112.74.186.85
+ DEBUG [2d1eb074] Command: if test ! -d /home/cj/lending_book_wxa/current; then echo "Directory does not exist '/home/cj/lending_book_wxa/current'" 1>&2; false; fi
+ DEBUG [2d1eb074] Finished in 0.020 seconds with exit status 0 (successful).
+ DEBUG [a7b419dc] Running [ -f /home/cj/lending_book_wxa/shared/tmp/pids/puma.pid ] as cj@112.74.186.85
+ DEBUG [a7b419dc] Command: [ -f /home/cj/lending_book_wxa/shared/tmp/pids/puma.pid ]
+ DEBUG [a7b419dc] Finished in 0.020 seconds with exit status 0 (successful).
+ DEBUG [b9c98ec9] Running kill -0 $( cat /home/cj/lending_book_wxa/shared/tmp/pids/puma.pid ) as cj@112.74.186.85
+ DEBUG [b9c98ec9] Command: kill -0 $( cat /home/cj/lending_book_wxa/shared/tmp/pids/puma.pid )
+ DEBUG [b9c98ec9] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [89ba7187] Running ~/.rvm/bin/rvm default do bundle exec pumactl -S /home/cj/lending_book_wxa/shared/tmp/pids/puma.state restart as cj@112.74.186.85
+ DEBUG [89ba7187] Command: cd /home/cj/lending_book_wxa/current && ( export RACK_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec pumactl -S /home/cj/lending_book_wxa/shared/tmp/pids/puma.state restart )
+ DEBUG [89ba7187] 	Command restart sent success
+  INFO [89ba7187] Finished in 0.716 seconds with exit status 0 (successful).
