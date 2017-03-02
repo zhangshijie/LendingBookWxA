@@ -15,7 +15,6 @@ class UsersController < ApplicationController
         return render json: {error: 4000, msg: '创建用户失败'}, status: 400
 	  end
 
-       # @user = User.new(name: 'aa', avatar: 'bb')
 	end
 
 	def show
@@ -28,8 +27,6 @@ class UsersController < ApplicationController
 		if !@user
 			return render json: {error: 4000, msg: '找不到该用户'}, status: 400
 		end
-
-		# render json: {error: 4000, msg: '找不到该用户'}, status: 400
 	end
 
 

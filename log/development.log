@@ -2146,3 +2146,398 @@ Processing by UsersController#create as */*
 Completed 200 OK in 27ms (Views: 13.5ms | ActiveRecord: 2.0ms)
 
 
+Started POST "/books" for ::1 at 2017-03-02 15:23:08 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (36.5ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"title1", "url"=>"avatar1", "dsc"=>"dsc1", "img"=>"img1"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.0.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.0.1) lib/action_controller/metal/request_forgery_protection.rb:223:in `handle_unverified_request'
+actionpack (5.0.1) lib/action_controller/metal/request_forgery_protection.rb:218:in `verify_authenticity_token'
+activesupport (5.0.1) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.1) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+actionpack (5.0.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.1) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.2ms)
+Started POST "/books" for ::1 at 2017-03-02 15:23:34 +0800
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"title1", "url"=>"avatar1", "dsc"=>"dsc1", "img"=>"img1"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('title1', 'dsc1', 'avatar1', 'img1', '2017-03-02 07:23:44', '2017-03-02 07:23:44')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 73ms (ActiveRecord: 19.3ms)
+
+
+Started POST "/books" for ::1 at 2017-03-02 15:23:56 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"title1", "url"=>"avatar1", "dsc"=>"dsc1", "img"=>"img1"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('title1', 'dsc1', 'avatar1', 'img1', '2017-03-02 07:23:56', '2017-03-02 07:23:56')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+No template found for BooksController#create, rendering head :no_content
+Completed 204 No Content in 65ms (ActiveRecord: 4.7ms)
+
+
+Started POST "/books" for ::1 at 2017-03-02 15:24:28 +0800
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"title1", "url"=>"avatar1", "dsc"=>"dsc1", "img"=>"img1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('title1', 'dsc1', 'avatar1', 'img1', '2017-03-02 07:24:28', '2017-03-02 07:24:28')[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering books/create.json.builder
+  Rendered books/create.json.builder (130.4ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `json' for #<#<Class:0x007fac69dcb6e0>:0x007fac69e08388>
+Did you mean?  json_escape
+               JSON):
+    1: 
+    2: json.title @book.title
+    3: json.dsc @book.dsc
+    4: json.img @book.img
+    5: json.url @book.url
+  
+app/views/books/create.json.builder:2:in `_app_views_books_create_json_builder__3983777235179757027_70189243616640'
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.9ms)
+Started POST "/books" for ::1 at 2017-03-02 15:27:08 +0800
+Processing by BooksController#create as */*
+  Parameters: {"------WebKitFormBoundaryIWC7D7l6SCX87Q60\r\nContent-Disposition: form-data; name"=>"\"name\"\r\n\r\naaaa\r\n------WebKitFormBoundaryIWC7D7l6SCX87Q60\r\nContent-Disposition: form-data; name=\"avatar\"\r\n\r\nbbb\r\n------WebKitFormBoundaryIWC7D7l6SCX87Q60--\r\n"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+RailsParam::Param::InvalidParameterError (Parameter is required):
+  
+app/controllers/books_controller.rb:5:in `create'
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.0ms)
+Started POST "/books" for ::1 at 2017-03-02 15:27:12 +0800
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"title1", "url"=>"avatar1", "dsc"=>"dsc1", "img"=>"img1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (5.5ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('title1', 'dsc1', 'avatar1', 'img1', '2017-03-02 07:27:12', '2017-03-02 07:27:12')[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering books/create.json.builder
+  Rendered books/create.json.builder (87.0ms)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 16.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `json' for #<#<Class:0x007fac69dcb6e0>:0x007fac6b943b20>
+Did you mean?  json_escape
+               JSON):
+    1: json.title @book.title
+    2: json.dsc @book.dsc
+    3: json.img @book.img
+    4: json.url @book.url
+  
+app/views/books/create.json.builder:1:in `_app_views_books_create_json_builder__3983777235179757027_70189258000320'
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.2ms)
+Started POST "/books" for ::1 at 2017-03-02 15:27:35 +0800
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"title1", "url"=>"avatar1", "dsc"=>"dsc1", "img"=>"img1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('title1', 'dsc1', 'avatar1', 'img1', '2017-03-02 07:27:35', '2017-03-02 07:27:35')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering books/create.json.builder
+  Rendered books/create.json.builder (101.8ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `json' for #<#<Class:0x007fac69dcb6e0>:0x007fac6af05b68>
+Did you mean?  json_escape
+               JSON):
+    1: # json.title @book.title
+    2: json.dsc @book.dsc
+    3: json.img @book.img
+    4: json.url @book.url
+  
+app/views/books/create.json.builder:2:in `_app_views_books_create_json_builder__3983777235179757027_70189252621880'
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.7ms)
+Started POST "/books" for ::1 at 2017-03-02 15:30:47 +0800
+Processing by BooksController#create as */*
+  Parameters: {"title"=>"title1", "url"=>"avatar1", "dsc"=>"dsc1", "img"=>"img1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('title1', 'dsc1', 'avatar1', 'img1', '2017-03-02 07:30:47', '2017-03-02 07:30:47')[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering books/create.json.jbuilder
+  Rendered books/create.json.jbuilder (2.9ms)
+Completed 200 OK in 31ms (Views: 16.7ms | ActiveRecord: 2.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (6.6ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `avatar`, `created_at`, `updated_at`, `auth_token`) VALUES ('User #0', 'http://www.baidu.com', '2017-03-02 07:32:26', '2017-03-02 07:32:26', 'GutLvAxjoKJ9WPZKRQLYkS3w')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `avatar`, `created_at`, `updated_at`, `auth_token`) VALUES ('User #1', 'http://www.baidu.com', '2017-03-02 07:32:26', '2017-03-02 07:32:26', 'mr6KXEG3YzuzYA72sgoe5Z3u')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('BOOK #0', 'I am dsc  #0', 'http://www.baidu.com #0', 'http://www.baidu.com/image #0', '2017-03-02 07:32:26', '2017-03-02 07:32:26')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('BOOK #1', 'I am dsc  #1', 'http://www.baidu.com #1', 'http://www.baidu.com/image #1', '2017-03-02 07:32:26', '2017-03-02 07:32:26')[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `books` (`title`, `dsc`, `url`, `img`, `created_at`, `updated_at`) VALUES ('BOOK #2', 'I am dsc  #2', 'http://www.baidu.com #2', 'http://www.baidu.com/image #2', '2017-03-02 07:32:26', '2017-03-02 07:32:26')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/books/1" for ::1 at 2017-03-02 15:32:58 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (12.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (15.6ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 13.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `shop' for #<Book:0x007f820b3184b0>):
+    1: json.id @book.id
+    2: json.title @book.title
+    3: json.dsc @book.dsc
+    4: json.img @book.shop.img
+    5: json.url @book.shop.url
+  
+app/views/books/show.json.jbuilder:4:in `_app_views_books_show_json_jbuilder___3962953636804808696_70098255501360'
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/cheungcj/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.0ms)
+Started GET "/books/1" for ::1 at 2017-03-02 15:33:12 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (2.6ms)
+Completed 200 OK in 27ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/2" for ::1 at 2017-03-02 15:33:18 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 2 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (0.4ms)
+Completed 200 OK in 25ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/3" for ::1 at 2017-03-02 15:33:20 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 3 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (0.4ms)
+Completed 200 OK in 23ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/10" for ::1 at 2017-03-02 15:33:48 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 10 LIMIT 1[0m
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/14" for ::1 at 2017-03-02 15:33:50 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"14"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 14 LIMIT 1[0m
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/13" for ::1 at 2017-03-02 15:33:51 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 13 LIMIT 1[0m
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/3" for ::1 at 2017-03-02 15:33:52 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 3 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (0.5ms)
+Completed 200 OK in 24ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/4" for ::1 at 2017-03-02 15:33:53 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 4 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (0.5ms)
+Completed 200 OK in 24ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/5" for ::1 at 2017-03-02 15:33:54 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 5 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (0.5ms)
+Completed 200 OK in 23ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/6" for ::1 at 2017-03-02 15:33:55 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 6 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (0.4ms)
+Completed 200 OK in 21ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/7" for ::1 at 2017-03-02 15:33:58 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 7 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (0.6ms)
+Completed 200 OK in 24ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/0" for ::1 at 2017-03-02 15:34:04 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"0"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 0 LIMIT 1[0m
+Completed 400 Bad Request in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/19" for ::1 at 2017-03-02 15:34:05 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 19 LIMIT 1[0m
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/10" for ::1 at 2017-03-02 15:34:07 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 10 LIMIT 1[0m
+Completed 400 Bad Request in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books/9" for ::1 at 2017-03-02 15:34:09 +0800
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT  `books`.* FROM `books` WHERE `books`.`id` = 9 LIMIT 1[0m
+  Rendering books/show.json.jbuilder
+  Rendered books/show.json.jbuilder (0.5ms)
+Completed 200 OK in 23ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+
+

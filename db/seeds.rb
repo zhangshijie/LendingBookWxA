@@ -13,5 +13,14 @@
    user.name = "User ##{i}"
    user.avatar = "http://www.baidu.com"
    user.save
-   # user = User.create(:name => "User ##{i}", :avatar => "http://www.baidu.com")
+end
+
+
+3.times do |i|
+   book = Book.new
+   book.title = "BOOK ##{i}"
+   book.dsc = "I am dsc  ##{i}"
+   book.url = "http://www.baidu.com ##{i}"
+   book.img = "http://www.baidu.com/image ##{i}"
+   book.save
 end
